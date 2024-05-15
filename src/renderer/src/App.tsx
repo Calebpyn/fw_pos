@@ -1,13 +1,15 @@
-import Versions from './components/Versions'
-import electronLogo from './assets/electron.svg'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import HomeScreen from "./components/HomeScreen"
 
 function App(): JSX.Element {
   const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
 
   return (
-    <div>
-      <span className='text-green-500'>Hola</span>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomeScreen/>}/>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
