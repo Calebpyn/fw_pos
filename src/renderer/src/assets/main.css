@@ -1,3 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.transitions {
+  transition: all ease .3s;
+}
+
+.unactive-w {
+  width: 0px;
+}
+
+.unactive-w {
+  width: 256px;
+}
+
+
+
+
+/* Custom Bg */
+.radial-pos-assistant {
+  background: radial-gradient(#e66465, #000AFF);
+  transition: all ease .3s;
+}
+
+.radial-pos-assistant:hover {
+  scale: 1.02;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.radial-current-order {
+  background: radial-gradient(#0c02cf, #2186f9);
+  transition: all ease .3s;
+}
+
+.radial-current-order:hover {
+  scale: 1.02;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.basic-w-bg {
+  background-color: #181818;
+  transition: all ease .3s;
+}
+
+.basic-w-bg:hover {
+  scale: 1.02;
+  cursor: pointer;
+  transition: all ease .3s;
+}
+
+.bg-active-green {
+  background-color: #12DC00;
+}
+
+.note-widget-grad-bg {
+  background: radial-gradient(#D16E27, #D18D27);
+  transition: all ease .3s;
+}
+
+.note-widget-grad-bg:hover input {
+  font-weight: 600;
+  transition: all ease .3s;
+}
+
+.note-widget-grad-bg input {
+  transition: all ease .3s;
+}
+
+.note-basic-bg {
+  background-color: #131313;
+}
+
+.music-player-bg {
+  background-image: url("../assets/test_image_music_wid.jpg");
+}
+
+.music-player-blur {
+  backdrop-filter: blur(15px);
+}
+
+.radial-edit-button {
+  background: radial-gradient(#888888, #171717);
+  transition: all ease .3s;
+}
+
+.radial-edit-button:hover {
+  scale: 1.05;
+  transition: all ease .3s;
+}
+
+
+
+
+
+/* Custom Height */
+.h-544 {
+  height: 544px;
+}
+
+.h-360 {
+  height: 360px;
+}
+
+.h-300 {
+  height: 300px;
+}
+
+.h-110 {
+  height: 100px;
+}
+
+
+
+/* Custom Width */
+.min-w-64 {
+  min-width: 256px;
+}
+
+
+
+
+/* Custom Text Size */
+.text-12 {
+  font-size: 14px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.text-8-c {
+  font-size: 8px;
+}
+
+.text-4 {
+  font-size: 4px;
+}
+
+.text-0 {
+  font-size: 0px;
+}
+
+
+
+/* Hide Scroll Bar */
+.hide-sb::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/* Custom Transform */
+.rotate-45-c {
+  transform: rotate(90deg);
+}
+
+.rotate-180-c {
+  transform: rotate(180deg);
+}
+
+
+/* Custom Range Input */
+.c-range-input {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.c-range-input::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #000000a6;
+  border-radius: 50px;
+}
+
+.c-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 5px;
+  width: 10px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: -407px 0 0 400px rgb(255, 255, 255);
+}
+
+
+/* Custom Shapes */
+.play-button {
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-left: 21px solid #ffffff;
+  border-bottom: 14px solid transparent;
+}
+
